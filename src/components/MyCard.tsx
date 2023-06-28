@@ -1,28 +1,36 @@
 import { MdOutlineMailOutline } from "react-icons/md";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsArrowBarDown } from "react-icons/bs";
+
 import Header from "./Header";
 const MyCard = () => {
   return (
-    <main className="flex flex-col justify-start items-center gap-5 h-screen bg-blue-400">
+    <main className="flex flex-col justify-start items-center gap-5 h-screen w-screen bg-secondary">
       <Header />
       <section className="mt-40 space-y-10">
-        <hgroup className="space-y-1 text-center">
-          <h1 className="text-8xl">Cesar Leyton</h1>
-          <h3 className="text-3xl">Fullstack Developer</h3>
+        <hgroup className="space-y-4 text-center">
+          <h1 className="text-8xl font-noirpro text-terciary brightness-105 drop-shadow-md ">
+            Cesar Leyton
+          </h1>
+          <h3 className="text-3xl font-noirlight text-primary">
+            Fullstack Developer
+          </h3>
         </hgroup>
         <section>
-          <nav>
-            <ul className="flex items-center justify-center gap-8">
+          <nav className="flex flex-col items-center justify-center gap-20">
+            <ul className="flex items-center justify-center gap-8 [&>ul>li]: text-terciary ">
               <li>
-                <MdOutlineMailOutline className="text-5xl" />
+                <MdOutlineMailOutline className="text-5xl  hover:text-primary duration-200" />
               </li>
               <li>
-                <BsGithub className="text-4xl" />
+                <BsGithub className="text-4xl  hover:text-primary duration-200" />
               </li>
               <li>
-                <BsLinkedin className="text-4xl" />
+                <BsLinkedin className="text-4xl  hover:text-primary transition-colors duration-200" />
               </li>
             </ul>
+            <div className="animate-bounce w-5 h-5 text-center text-primary text-4xl  ml-1">
+              <BsArrowBarDown />
+            </div>
           </nav>
         </section>
       </section>

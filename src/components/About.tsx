@@ -1,9 +1,10 @@
+import { BsArrowBarDown } from "react-icons/bs";
 const About = () => {
   return (
-    <section className="h-screen flex flex-col items-center justify-center mb-10 gap-4">
-      <h4 className="text-3xl">About me</h4>
-      <article className="max-w-md">
-        <p>
+    <section className="h-screen w-screen flex flex-col items-center justify-center mb-10 gap-4 bg-terciary">
+      <h4 className="text-3xl text-primary font-noirpro">About me</h4>
+      <article className="max-w-md flex flex-col items-center justify-center gap-16">
+        <p className="text-secondary font-noirlight px-5">
           Two years ago I was playing The witcher 3 and it came to my mind how
           you could create a world that allowed you to take so many different
           paths, so many ways to do things, that made me fell in love with the
@@ -15,6 +16,7 @@ const About = () => {
           digitalization. Outside of work and studies I enjoy working out,
           videogames and reading.
         </p>
+        <BsArrowBarDown className="animate-bounce text-primary text-4xl" />
       </article>
     </section>
   );

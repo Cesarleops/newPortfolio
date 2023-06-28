@@ -5,6 +5,7 @@ const myProjects: {
   AllGames: ProjectCardProps;
   Hbuy: ProjectCardProps;
   Umoob: ProjectCardProps;
+  Sendy: ProjectCardProps;
 } = {
   AdvancedSignUp: {
     title: "Sign Up form",
@@ -46,7 +47,22 @@ const myProjects: {
     title: "Umoob",
     description:
       "Umoob is a business management app and a marketplace focused on the fitness industry. I've worked as a front-end developer in several development cycles ",
-    stack: ["Typescript", "Python", "React", "Redux", "Sass", "Django"],
+    stack: ["Typescript", "Python", "React", "Redux", "SASS", "Django"],
+    image: "",
+    demo: "https://www.umoob.com/",
+  },
+  Sendy: {
+    title: "Sendy",
+    description:
+      "Sendy is a messaging app when you can add friends and talk with them anytime",
+    stack: [
+      "Typescript",
+      "Next JS",
+      "Tailwind CSS",
+      "Mongo DB",
+      "Express",
+      "Moongose",
+    ],
     image: "",
     demo: "https://www.umoob.com/",
   },
@@ -54,9 +70,11 @@ const myProjects: {
 
 const MyProjects = () => {
   return (
-    <main className="h-screen">
-      <h5>Personal Projects</h5>
-      <section className="flex flex-wrap justify-center  items-start gap-10">
+    <main className=" w-screen flex flex-col items-center justify-center bg-terciary ">
+      <h5 className="text-3xl text-primary  pt-5 xl:pt-10">
+        Personal Projects
+      </h5>
+      <section className="flex flex-col px-3 mt-5 mb-5 gap-3  xl:flex-row max-w-screen flex-wrap pl-2">
         {Object.keys(myProjects).map((key, i) => (
           <ProjectCard
             title={myProjects[key as keyof typeof myProjects]["title"]}
