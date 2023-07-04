@@ -19,13 +19,22 @@ const MyCard = () => {
           <nav className="flex flex-col items-center justify-center gap-20">
             <ul className="flex items-center justify-center gap-8 [&>ul>li]: text-terciary ">
               <li>
-                <MdOutlineMailOutline className="text-5xl  hover:text-primary duration-200" />
+                <a href="mailto:cesarleyton549@gmail.com" target="_blank">
+                  <MdOutlineMailOutline className="text-5xl  hover:text-primary duration-200" />
+                </a>
               </li>
               <li>
-                <BsGithub className="text-4xl  hover:text-primary duration-200" />
+                <a href="https://github.com/Cesarleops" target="_blank">
+                  <BsGithub className="text-4xl  hover:text-primary duration-200" />
+                </a>
               </li>
               <li>
-                <BsLinkedin className="text-4xl  hover:text-primary transition-colors duration-200" />
+                <a
+                  href="https://www.linkedin.com/in/cesar-leyton-a5b879238/"
+                  target="_blank"
+                >
+                  <BsLinkedin className="text-4xl  hover:text-primary transition-colors duration-200" />
+                </a>
               </li>
             </ul>
             <div className="animate-bounce w-5 h-5 text-center text-primary text-4xl  ml-1">

@@ -1,7 +1,10 @@
 import { BsArrowBarDown } from "react-icons/bs";
 const About = () => {
   return (
-    <section className="h-screen w-screen flex flex-col items-center justify-center mb-10 gap-4 bg-terciary">
+    <section
+      className="h-screen w-screen flex flex-col items-center justify-center mb-10 gap-4 bg-terciary"
+      id="about"
+    >
       <h4 className="text-3xl text-primary font-noirpro">About me</h4>
       <article className="max-w-md flex flex-col items-center justify-center gap-16">
         <p className="text-secondary font-noirlight px-5">

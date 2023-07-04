@@ -64,17 +64,21 @@ const myProjects: {
       "Moongose",
     ],
     image: "",
+    gitHub: "https://github.com/Cesarleops/superChat",
     demo: "https://www.umoob.com/",
   },
 };
 
 const MyProjects = () => {
   return (
-    <main className=" w-screen flex flex-col items-center justify-center bg-terciary ">
+    <main
+      className=" w-screen flex flex-col items-center justify-center bg-terciary "
+      id="projects"
+    >
       <h5 className="text-3xl text-primary  pt-5 xl:pt-10">
         Personal Projects
       </h5>
-      <section className="flex flex-col px-3 mt-5 mb-5 gap-3  xl:flex-row max-w-screen flex-wrap pl-2">
+      <section className="flex flex-col px-3 mt-5 mb-5 gap-3  md:flex-row max-w-screen flex-wrap pl-2">
         {Object.keys(myProjects).map((key, i) => (
           <ProjectCard
             title={myProjects[key as keyof typeof myProjects]["title"]}

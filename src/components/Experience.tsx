@@ -28,9 +28,12 @@ const myExperience: {
 };
 const Experience = () => {
   return (
-    <main className="h-screen flex flex-col items-center justify-center bg-secondary relative ">
+    <main
+      className="h-screen flex flex-col items-center justify-center bg-secondary relative "
+      id="experience"
+    >
       <h4 className="text-3xl text-primary absolute top-10">Experience</h4>
-      <section className="flex  items-start gap-10 overflow-x-auto w-screen">
+      <section className=" sm:flex items-start gap-10 overflow-x-auto w-screen">
         {Object.keys(myExperience).map((key, i) => (
           <ExperienceCard
             longevity={
