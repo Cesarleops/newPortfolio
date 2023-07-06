@@ -1,0 +1,44 @@
+---
+export interface ExperienceProps {
+  longevity: string;
+  job: string;
+  position: string;
+  description: string;
+  technologies?: string[];
+}
+const {description, longevity, position, job, technologies} = Astro.props
+const paragraphs = description.split("/");
+---
+
+
+    <section class=" xl:flex flex-col items-center p-5 relative">
+      <header class="xl:flex gap-6 ">
+        <p class="text-primary">{longevity}</p>
+        <h4 class="text-primary">{job}</h4>
+      </header>
+      <section class="xl:flex flex-col items-center ">
+        <article
+          class={`${
+            job === "Umoob" ? "xl:ml-[390px]" : "xl:ml-48"
+          } max-w-[300px]`}
+        >
+          <h5 class="text-terciary">{position}</h5>
+          {paragraphs.map((paragraph) => (
+            <p class="text-terciary">
+              <small class="text-primary xl:text-center text-xl">-</small>{" "}
+              {paragraph}
+            </p>
+          ))}
+        </article>
+        <article class="xl:max-w-md">
+          {technologies?.map((tech, i) => (
+            <p key={i} class="text-terciary">
+              {tech}
+            </p>
+          ))}
+        </article>
+      </section>
+    </section>
+  
+
+

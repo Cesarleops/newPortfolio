@@ -1,9 +1,7 @@
 ---
 import { myProjects } from "../data";
 import Layout from "../layouts/Layout.astro";
-import { AiOutlinePlayCircle } from "react-icons/ai";
-import { BsGithub } from "react-icons/bs";
-import { GrGallery } from "react-icons/gr";
+
 interface Props {
     id:string
 }
@@ -31,13 +29,14 @@ const actualProject = Object.values(myProjects).find( p => p.id === project)
             </article>
             <ul class="absolute top-3 right-3 flex gap-3 text-xl ">
               <li>
-                <AiOutlinePlayCircle className="text-terciary" />
+               
+                
               </li>
               <li>
-                <BsGithub className="text-terciary" />
+            
               </li>
               <li>
-                <GrGallery className="bg-terciary" />
+               
               </li>
             </ul>
           </section>

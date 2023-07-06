@@ -1,4 +1,5 @@
-import type { ProjectCardProps } from "../components/ProjectCard";
+
+import ProjectCardProps from '../components/ProjectCard.astro'
 
 export const myProjects: {
     AdvancedSignUp: ProjectCardProps;
