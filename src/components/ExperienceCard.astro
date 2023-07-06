@@ -1,11 +1,5 @@
 ---
-export interface ExperienceProps {
-  longevity: string;
-  job: string;
-  position: string;
-  description: string;
-  technologies?: string[];
-}
+
 const {description, longevity, position, job, technologies} = Astro.props
 const paragraphs = description.split("/");
 ---
@@ -23,7 +17,7 @@ const paragraphs = description.split("/");
           } max-w-[300px]`}
         >
           <h5 class="text-terciary">{position}</h5>
-          {paragraphs.map((paragraph) => (
+          {paragraphs.map((paragraph:string) => (
             <p class="text-terciary">
               <small class="text-primary xl:text-center text-xl">-</small>{" "}
               {paragraph}
@@ -31,8 +25,8 @@ const paragraphs = description.split("/");
           ))}
         </article>
         <article class="xl:max-w-md">
-          {technologies?.map((tech, i) => (
-            <p key={i} class="text-terciary">
+          {technologies?.map((tech:string) => (
+            <p class="text-terciary">
               {tech}
             </p>
           ))}

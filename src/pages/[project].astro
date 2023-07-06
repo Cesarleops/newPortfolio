@@ -23,7 +23,7 @@ const actualProject = Object.values(myProjects).find( p => p.id === project)
               <p class="text-terciary">{actualProject?.description}</p>
             </article>
             <article class="flex max-w-[310px] flex-wrap gap-2 ">
-              {actualProject?.stack?.map((tec) => (
+              {actualProject?.stack?.map((tec:string) => (
                 <p class="whitespace-normal p-1 rounded-lg bg-primary ">{tec}</p>
               ))}
             </article>

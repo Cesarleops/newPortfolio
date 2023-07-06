@@ -1,5 +1,12 @@
 ---
-import type { ExperienceProps } from './Experience.astro';
+interface ExperienceProps {
+  longevity: string;
+  job: string;
+  position: string;
+  description: string;
+  technologies?: string[];
+}
+
 import ExperienceCard from './ExperienceCard.astro';
 const myExperience: {
   Umoob: ExperienceProps;

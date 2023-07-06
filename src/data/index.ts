@@ -1,7 +1,15 @@
 
-import ProjectCardProps from '../components/ProjectCard.astro'
+interface ProjectCardProps {
+  id: string;
+  title: string;
+  description?: string;
+  stack?: string[];
+  image?: string;
+  gitHub?: string;
+  demo?: string;
+}
 
-export const myProjects: {
+export  const myProjects: {
     AdvancedSignUp: ProjectCardProps;
     AllGames: ProjectCardProps;
     Hbuy: ProjectCardProps;
