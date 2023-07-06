@@ -37,9 +37,7 @@ const MyCard = () => {
                 </a>
               </li>
             </ul>
-            <div className="animate-bounce w-5 h-5 text-center text-primary text-4xl  ml-1">
-              <BsArrowBarDown />
-            </div>
+            <a href="/home">Know more about me!</a>
           </nav>
         </section>
       </section>

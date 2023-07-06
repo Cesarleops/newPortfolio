@@ -26,7 +26,7 @@ const myExperience: {
       "Collaborated with other students in the research groups of computational science and data analysis that belong to the university, where I have been able to develop my problem solving and communication skills  ",
   },
 };
-const Experience = () => {
+const MyExperience = () => {
   return (
     <main
       className="h-screen flex flex-col items-center justify-center bg-secondary relative "
@@ -54,4 +54,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default MyExperience;

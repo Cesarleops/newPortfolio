@@ -1,5 +1,5 @@
 import { BsArrowBarDown } from "react-icons/bs";
-const About = () => {
+const AboutMe = () => {
   return (
     <section
       className="h-screen w-screen flex flex-col items-center justify-center mb-10 gap-4 bg-terciary"
@@ -25,4 +25,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutMe;

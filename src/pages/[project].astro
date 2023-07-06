@@ -1,0 +1,47 @@
+---
+import { myProjects } from "../data";
+import Layout from "../layouts/Layout.astro";
+import { AiOutlinePlayCircle } from "react-icons/ai";
+import { BsGithub } from "react-icons/bs";
+import { GrGallery } from "react-icons/gr";
+interface Props {
+    id:string
+}
+
+
+const {project} = Astro.params
+
+
+console.log(Object.values(myProjects))
+const actualProject = Object.values(myProjects).find( p => p.id === project) 
+console.log(actualProject)
+---
+
+<Layout title="Cesar Leyton">
+    <main class="h-screen w-screen flex justify-center items-center">
+        <section class="relative bg-secondary p-5 rounded-lg sm:w-[300px] xl:h-[700px] xl:w-[700px]" style=`view-transition-name:project-${actualProject?.id}`>
+            <h4 class="text-2xl text-primary">{actualProject?.title}</h4>
+            <article class="max-w-sm mb-2">
+              <p class="text-terciary">{actualProject?.description}</p>
+            </article>
+            <article class="flex max-w-[310px] flex-wrap gap-2 ">
+              {actualProject?.stack?.map((tec) => (
+                <p class="whitespace-normal p-1 rounded-lg bg-primary ">{tec}</p>
+              ))}
+            </article>
+            <ul class="absolute top-3 right-3 flex gap-3 text-xl ">
+              <li>
+                <AiOutlinePlayCircle className="text-terciary" />
+              </li>
+              <li>
+                <BsGithub className="text-terciary" />
+              </li>
+              <li>
+                <GrGallery className="bg-terciary" />
+              </li>
+            </ul>
+          </section>
+    </main>
+ 
+</Layout>
+
