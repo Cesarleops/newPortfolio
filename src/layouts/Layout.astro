@@ -20,13 +20,14 @@ export interface Props {
 	</head>
 	<body>
 	  <slot />
-	</body>
-	 
-	<script>import { startViewTransition } from "../utils/navigation";
-
+	  <script>
+	    import { startViewTransition } from "../utils/navigation";
 		startViewTransition();
 	  </script>
 	  
+	</body>
+	 
+	
   </html>
   
   <style is:global>
