@@ -12,9 +12,9 @@ interface Props {
 const {project} = Astro.params
 
 
-console.log(Object.values(myProjects))
+
 const actualProject = Object.values(myProjects).find( p => p.id === project) 
-console.log(actualProject)
+
 ---
 
 <Layout title="Cesar Leyton">

@@ -1,5 +1,5 @@
 import { MdOutlineMailOutline } from "react-icons/md";
-import { BsLinkedin, BsGithub, BsArrowBarDown } from "react-icons/bs";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 import Header from "./Header";
 const MyCard = () => {
