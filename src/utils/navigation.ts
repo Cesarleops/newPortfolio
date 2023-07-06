@@ -5,7 +5,7 @@ const checkIsNavigationSupported = () => {
 const fetchPage = async (url:string) => {
     // vamos a cargar la página de destino
     // utilizando un fetch para obtener el HTML
-    console.log(url)
+
     const response = await fetch(url) // /clean-code
     const text = await response.text()
     // quedarnos sólo con el contenido del html dentro de la etiqueta body
@@ -20,7 +20,7 @@ export const startViewTransition = () => {
   
     window.navigation.addEventListener('navigate', (event) => {
       const toUrl = new URL(event.destination.url)
-        console.log(toUrl)
+     
       // es una página externa? si es así, lo ignoramos
       if (location.origin !== toUrl.origin) return
   

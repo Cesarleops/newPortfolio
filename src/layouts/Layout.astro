@@ -21,6 +21,12 @@ export interface Props {
 	<body>
 	  <slot />
 	</body>
+	 
+	<script>import { startViewTransition } from "../utils/navigation";
+
+		startViewTransition();
+	  </script>
+	  
   </html>
   
   <style is:global>
@@ -38,9 +44,4 @@ export interface Props {
 	  from { opacity: 0; }
 	}
   </style>
-  
-  <script>import { startViewTransition } from "../utils/navigation";
-
-	startViewTransition();
-  </script>
-  
+ 
