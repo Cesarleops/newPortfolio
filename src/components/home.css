@@ -1,0 +1,53 @@
+
+a{
+  padding: 8px 0px;
+}
+.popi::before {
+ 
+  background: linear-gradient(90deg,#ed231a, #93291e);
+  content: 'Find more about me!'; /* Use the CSS variable for content */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  inset: 0;
+  animation: animated 8s infinite;
+  animation-delay:  0s;
+
+}
+
+.pipi::before {
+
+  animation: animated 8s infinite;
+  background: linear-gradient(90deg,#ed231a, #93291e);
+  content: 'Experience'; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  inset: 0;
+  animation-delay:  3s;
+
+}
+
+.pupu::before {
+  padding-top: 2px;
+  background: linear-gradient(90deg,#ed231a, #93291e);
+  content: 'My software projects';
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  inset: 0;
+  animation-delay: var(--delay);
+  animation: animated 8s infinite;
+  animation-delay:  6s;
+
+}
+
+@keyframes animated {
+  0%, 16.667%, 100%{
+      opacity: 1;
+  }
+
+  33.333% , 83.333% {
+      opacity: 0;
+  }
+}
