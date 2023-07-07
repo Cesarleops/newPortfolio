@@ -1,44 +1,50 @@
 ---
+import Header from '../components/Header.astro'
+import github from '/github-outline.svg'
 
-import Header from "./Header.astro";
 ---
 
 
 
-    <main class="flex flex-col justify-start items-center gap-5 h-screen w-screen bg-secondary">
+    <main class="flex flex-col justify-start items-center gap-5 h-screen w-screen bg-primary">
       <Header />
       <section class="mt-40 space-y-10">
         <hgroup class="space-y-4 text-center">
           <h1 class="text-8xl font-noirpro text-terciary brightness-105 drop-shadow-md ">
             Cesar Leyton
           </h1>
-          <h3 class="text-3xl font-noirlight text-primary">
+          <h3 class="text-3xl font-noirpro ">
             Fullstack Developer
           </h3>
         </hgroup>
         <section>
           <nav class="flex flex-col items-center justify-center gap-20">
             <ul class="flex items-center justify-center gap-8 [&>ul>li]: text-terciary ">
-              <li>
+              <li class="h-10 w-10 hover:scale-110" >
                 <a href="mailto:cesarleyton549@gmail.com" target="_blank">
-
+                  <img src={'/email-outline.svg'} alt="email" class="fill-terciary"/>
                 </a>
               </li>
-              <li>
+              <li class="h-10 w-10 hover:scale-110">
                 <a href="https://github.com/Cesarleops" target="_blank">
-                 
+                  <img src={github} alt="gitHub" class="fill-terciary"/>
+                  
                 </a>
               </li>
-              <li>
+              <li class="h-10 w-10 hover:scale-110">
                 <a
                   href="https://www.linkedin.com/in/cesar-leyton-a5b879238/"
                   target="_blank"
                 >
-
+                <img src={'/linkedin-outline.svg'} alt="linkedIn" class="stroke-terciary"/>
+                
                 </a>
               </li>
             </ul>
-            <a href="/home">Know more about me!</a>
+            <button  class="h-[80px] w-[120px] bg-terciary p-2 rounded-xl  border-2 border-black hover:scale-x-105 ">
+              <a href="/home" class="text-3xl font-noirpro">GO</a>
+            </button>
+            
           </nav>
         </section>
       </section>
