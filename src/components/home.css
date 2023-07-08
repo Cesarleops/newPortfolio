@@ -2,23 +2,12 @@
 a{
   padding: 8px 0px;
 }
-.popi::before {
- 
-  background: linear-gradient(90deg,#ed231a, #93291e);
-  content: 'Find more about me!'; /* Use the CSS variable for content */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
-  inset: 0;
-  animation: animated 8s infinite;
-  animation-delay:  0s;
 
-}
 
 .pipi::before {
 
   animation: animated 8s infinite;
-  background: linear-gradient(90deg,#ed231a, #93291e);
+  background: linear-gradient(90deg,#2980B9, #6DD5FA);
   content: 'Experience'; 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -30,7 +19,7 @@ a{
 
 .pupu::before {
   padding-top: 2px;
-  background: linear-gradient(90deg,#ed231a, #93291e);
+  background: linear-gradient(90deg,#8E2DE2, #4A00E0);
   content: 'My software projects';
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

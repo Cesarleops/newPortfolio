@@ -5,32 +5,24 @@ const paragraphs = description.split("/");
 ---
 
 
-    <section class=" xl:flex flex-col items-center p-5 relative">
-      <header class="xl:flex gap-6 ">
-        <p class="text-primary font-noirpro">{longevity}</p>
-        <h4 class="text-primary font-noirpro">{job}</h4>
+    <section>
+      <header>
+        <p class="text-[#001053] font-noirpro">{longevity}</p>
+        <h4 class="text-[#001053] font-noirpro">{job}</h4>
       </header>
-      <section class="xl:flex flex-col items-center ">
+      <section class="flex flex-col items-center ">
         <article
-          class={`${
-            job === "Umoob" ? "xl:ml-[390px]" : "xl:ml-48"
-          } max-w-[300px]`}
+          class="max-w-[280px]"
         >
-          <h5 class="font-noirlight">{position}</h5>
+          <h5 class="font-noirlight text-xl">{position}</h5>
           {paragraphs.map((paragraph:string) => (
             <p class="font-noirlight">
-              <small class="font-noirlight xl:text-center text-xl">-</small>{" "}
+              <small class="font-noirlight text-[#001053]  text-center text-xl">-</small>{" "}
               {paragraph}
             </p>
           ))}
         </article>
-        <article class="xl:max-w-md">
-          {technologies?.map((tech:string) => (
-            <p class="font-noirlight">
-              {tech}
-            </p>
-          ))}
-        </article>
+        
       </section>
     </section>
   

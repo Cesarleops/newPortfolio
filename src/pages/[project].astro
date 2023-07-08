@@ -17,14 +17,14 @@ const actualProject = Object.values(myProjects).find( p => p.id === project)
 
 <Layout title="Cesar Leyton">
     <main class="h-screen w-screen flex justify-center items-center">
-        <section class="relative bg-secondary p-5 rounded-lg sm:w-[300px] xl:h-[700px] xl:w-[700px]" style=`view-transition-name:project-${actualProject?.id}`>
+        <section class="relative bg-secondary p-5  h-full  xl:h-[700px] xl:w-[700px]" style=`view-transition-name:project-${actualProject?.id}`>
             <h4 class="text-2xl text-primary">{actualProject?.title}</h4>
             <article class="max-w-sm mb-2">
               <p class="text-terciary">{actualProject?.description}</p>
             </article>
             <article class="flex max-w-[310px] flex-wrap gap-2 ">
               {actualProject?.stack?.map((tec:string) => (
-                <p class="whitespace-normal p-1 rounded-lg bg-primary ">{tec}</p>
+                <p class="whitespace-normal p-1 rounded-lg ">{tec}</p>
               ))}
             </article>
             <ul class="absolute top-3 right-3 flex gap-3 text-xl ">

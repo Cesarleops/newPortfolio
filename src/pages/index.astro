@@ -2,23 +2,16 @@
 import Layout from '../layouts/Layout.astro';
 import MyCard from '../components/MyCard.astro'
 import HomeCards from '../components/HomeCards';
-
-
-
+import About from '../components/About.astro';
 ---
 
 
 <Layout title="Cesar Leyton">
-	<main class="pb-2 w-screen">
-		<section>
-			<MyCard/>
-		</section>
-		<section>
-			<HomeCards/>
-		
-		</section>
-		
-		
+	<main class="bg-[#0079EB]">
+		<MyCard/>
+		<About/>
+		<HomeCards/>
+	</main>	
 </Layout>
 
 

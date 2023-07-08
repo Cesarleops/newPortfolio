@@ -25,7 +25,7 @@ const myExperience: {
       "Storybook",
     ],
     description:
-      "Developing responsive and reusable components with React+Typescript based on Figma designs / Maintenance and improvement of the code. / Contribute ideas that improve user experience, development and teamwork. / collaborate with senior engineers following a complete software development cycle including development paradigms,methodologies such as Atomic design and BEM, taking participation in code reviews",
+      "Developing responsive and reusable components with React+Typescript based on Figma designs / Maintenance and improvement of the code. / Contribute ideas that improve user experience, development and teamwork. / Collaborate with senior engineers following a complete software development cycle including development paradigms,methodologies such as Atomic design and BEM, taking participation in code reviews",
   },
   Nacional: {
     longevity: "2021-PRESENT",
@@ -39,11 +39,14 @@ const myExperience: {
 
 
     <main
-      class="h-screen flex flex-col items-center justify-center bg-terciary relative "
+      class="h-screen w-screen bg-white relative"
       id="experience"
+      style="view-transition-name:experience-anima"
     >
-      <h4 class="text-3xl text-primary absolute top-10 font-noirpro">Experience</h4>
-      <section class=" sm:flex items-start gap-10 overflow-x-auto w-screen">
+    <a class="absolute top-2 left-2" href="/">
+      <img class=" h-[55px] w-[55px]"  src="./arrow-left-outline.svg" alt="left"/>
+    </a>
+      <section class="pt-20 gap-20 flex flex-col items-center lg:flex-row lg:items-start lg:justify-center ">
         {Object.keys(myExperience).map((key, i) => (
           <ExperienceCard
             longevity={

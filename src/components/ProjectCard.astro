@@ -4,9 +4,10 @@ const {id, title} = Astro.props
 ---
 
     <section
-      class="relative bg-primary p-5 rounded-lg sm:w-[300px] xl:h-[350px]"
-      style=`view-transition-name:project-${id}`
+      class="h-44 w-[95%] rounded-md bg-blue-200 flex items-end"
     >
-      <a href={`${id}`}>GO</a>
+      <aside class="flex gap-3 items-center pl-2 w-[100%] h-[50px] bg-gradient-to-r from-[#f953c6] to-[#b91d73] ">
       <h4 class="text-2xl font-noirpro">{title}</h4>
+      <a href={`${id}`}>GO</a>
+      </aside> 
     </section>
