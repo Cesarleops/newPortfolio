@@ -21,7 +21,7 @@ const HomeCards = () => {
       </section>
       <section
         style={{ viewTransitionName: "project-anima" }}
-        className="px-2 mb-[20px] ease-in-out duration-300 w-[300px] h-[300px] bg-terciary shadow-xl    flex justify-center items-center rounded-md   hover:scale-y-105"
+        className="px-2 ease-in-out duration-300 w-[300px] h-[300px] bg-terciary shadow-xl  flex justify-center items-center rounded-md   hover:scale-y-105"
       >
         <a
           style={{

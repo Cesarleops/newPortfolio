@@ -16,30 +16,38 @@ const actualProject = Object.values(myProjects).find( p => p.id === project)
 ---
 
 <Layout title="Cesar Leyton">
-    <main class="h-screen w-screen flex justify-center items-center">
-        <section class="relative bg-secondary p-5  h-full  xl:h-[700px] xl:w-[700px]" style=`view-transition-name:project-${actualProject?.id}`>
-            <h4 class="text-2xl text-primary">{actualProject?.title}</h4>
+    <main class="h-screen relative w-screen flex justify-center items-center ">
+      <a class="absolute z-10 top-2 left-2" href="/projects">
+        <img class=" h-[55px] w-[55px]" src="./arrow-left-outline.svg" alt="left"/>
+      </a>
+        <section class="flex flex-col lg:flex-row items-center justify-center ">
+          <section class="p-5 flex flex-col pt-[50px] items-center justify-center" style=`view-transition-name:project-${actualProject?.id}`>
+            <h4 class="text-3xl font-noirpro text-[#001053]">{actualProject?.title}</h4>
             <article class="max-w-sm mb-2">
-              <p class="text-terciary">{actualProject?.description}</p>
+              <p class="font-noirlight text-xl text-black">{actualProject?.description}</p>
             </article>
-            <article class="flex max-w-[310px] flex-wrap gap-2 ">
+            <article class="flex max-w-[310px] flex-wrap gap-2 mb-10">
               {actualProject?.stack?.map((tec:string) => (
-                <p class="whitespace-normal p-1 rounded-lg ">{tec}</p>
+                <p class="font-noirpro text-sm text-white bg-[#001053] p-1 rounded-lg ">{tec}</p>
               ))}
             </article>
-            <ul class="absolute top-3 right-3 flex gap-3 text-xl ">
-              <li>
-               
-                
+            <ul class="flex gap-3 text-xl ">
+              <li class="h-10 w-10">
+               <a class="blue-img no-underline ">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#001053">
+                  <g data-name="Layer 2"><rect width="24" height="24" opacity="0"/>
+                <path d="M16.24 22a1 1 0 0 1-1-1v-2.6a2.15 2.15 0 0 0-.54-1.66 1 1 0 0 1 .61-1.67C17.75 14.78 20 14 20 9.77a4 4 0 0 0-.67-2.22 2.75 2.75 0 0 1-.41-2.06 3.71 3.71 0 0 0 0-1.41 7.65 7.65 0 0 0-2.09 1.09 1 1 0 0 1-.84.15 10.15 10.15 0 0 0-5.52 0 1 1 0 0 1-.84-.15 7.4 7.4 0 0 0-2.11-1.09 3.52 3.52 0 0 0 0 1.41 2.84 2.84 0 0 1-.43 2.08 4.07 4.07 0 0 0-.67 2.23c0 3.89 1.88 4.93 4.7 5.29a1 1 0 0 1 .82.66 1 1 0 0 1-.21 1 2.06 2.06 0 0 0-.55 1.56V21a1 1 0 0 1-2 0v-.57a6 6 0 0 1-5.27-2.09 3.9 3.9 0 0 0-1.16-.88 1 1 0 1 1 .5-1.94 4.93 4.93 0 0 1 2 1.36c1 1 2 1.88 3.9 1.52a3.89 3.89 0 0 1 .23-1.58c-2.06-.52-5-2-5-7a6 6 0 0 1 1-3.33.85.85 0 0 0 .13-.62 5.69 5.69 0 0 1 .33-3.21 1 1 0 0 1 .63-.57c.34-.1 1.56-.3 3.87 1.2a12.16 12.16 0 0 1 5.69 0c2.31-1.5 3.53-1.31 3.86-1.2a1 1 0 0 1 .63.57 5.71 5.71 0 0 1 .33 3.22.75.75 0 0 0 .11.57 6 6 0 0 1 1 3.34c0 5.07-2.92 6.54-5 7a4.28 4.28 0 0 1 .22 1.67V21a1 1 0 0 1-.94 1z"/></g></svg>
+               </a>
               </li>
-              <li>
-            
-              </li>
-              <li>
-               
+              <li class="h-10 w-10">
+                <a class="no-underline "><img src="./flash-outline.svg" alt="play"/></a>
               </li>
             </ul>
           </section>
+          <section class="w-[400px] h-[300px] bg-blue-500 text-center">AQUI DEBE IR LA GALERIA DE IMAGENES  </section>
+        </section>
+        
+          
     </main>
  
 </Layout>
