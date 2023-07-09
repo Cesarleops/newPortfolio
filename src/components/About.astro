@@ -26,3 +26,46 @@
 
 
 
+<script>
+  const card = document.getElementById('about')
+  console.log(card)
+  const observer = new IntersectionObserver((entries)=>{
+      if (entries[0].isIntersecting) {
+        console.log('inter')
+        card.classList.add('show');
+        observer.unobserve(card)
+      } else {
+        card.classList.remove('show');
+        
+      }
+      
+    }
+   
+  , {threshold: 0.5})
+ 
+  observer.observe(card)
+
+</script>
+
+<style>
+  #about.show {
+    opacity: 1;
+    transition: opacity 1s ease-out
+  }
+
+  #about {
+    opacity: 0;
+   
+    transition: opacity 0.6s ease-out
+  }
+</style>
+
+
+
+<script>
+
+const arr = [7,1,5,3,6,4]
+let max = arr[0]
+
+console.log(max)
+</script>

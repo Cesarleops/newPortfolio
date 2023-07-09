@@ -2,11 +2,11 @@
 interface ProjectCardProps {
   id: string;
   title: string;
-  description?: string;
-  stack?: string[];
-  image?: string;
+  description: string;
+  stack: string[];
+  image: string[];
   gitHub?: string;
-  demo?: string;
+  demo: string;
 }
 
 export  const myProjects: {
@@ -22,7 +22,7 @@ export  const myProjects: {
       description:
         "A funny challenge from Front-End Mentor where you have to develop a responsive form for a games suscription with a stepper.",
       stack: ["Typescript", "React", "Scss"],
-      image: "",
+      image: ["./firstSign.png", "./secondSign.png", "./thirdSign.png","./fourthSign.png"],
       gitHub: "https://github.com/Cesarleops/advancedSignUp",
       demo: "https://neon-mousse-70d49d.netlify.app",
     },
@@ -33,7 +33,7 @@ export  const myProjects: {
       description:
         "A non-responsive library where you can find information about any video game such as description, release date, reviews and more. You can see the most popular games as well as use filters to simplify your search.",
       stack: ["Javascript", "React", "Redux", "CSS", "PostgreSql", "Express"],
-      image: "[AllOne, AllTwo, AllThree, AllFourth ]",
+      image: ['./gamesOne.png','./gamesTwo.png','./gamesThree.png'],
       gitHub: "https://github.com/Cesarleops/PI-Videogames",
       demo: "https://pi-videogames-luh0u0eyu-cesarleops.vercel.app",
     },
@@ -51,7 +51,7 @@ export  const myProjects: {
         "MaterialUI",
         "Express",
       ],
-      image: "",
+      image: [],
       gitHub: "https://github.com/Felipesch96/PF-H-Buy",
       demo: "https://main.d2d0y3pf0pfssa.amplifyapp.com/",
     },
@@ -61,7 +61,7 @@ export  const myProjects: {
       description:
         "Umoob is a business management app and a marketplace focused on the fitness industry. I've worked as a front-end developer in several development cycles ",
       stack: ["Typescript", "Python", "React", "Redux", "SASS", "Django"],
-      image: "",
+      image: ['./umoobOne.png','./umoobTwo.png','./umoobThree.png'],
       demo: "https://www.umoob.com/",
     },
     Sendy: {
@@ -77,7 +77,7 @@ export  const myProjects: {
         "Express",
         "Moongose",
       ],
-      image: "",
+      image: [],
       gitHub: "https://github.com/Cesarleops/superChat",
       demo: "https://www.umoob.com/",
     },

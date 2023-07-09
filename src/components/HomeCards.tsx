@@ -8,13 +8,10 @@ const HomeCards = () => {
       >
         <a
           style={{
-            "--start-color": "#2457e3",
-            "--end-color": "#13f61f",
-            "--content": "Experience",
-            "--delay": "0s",
+            viewTransitionName: "experience-title",
           }}
           href="/experience"
-          className={`font-noirpro text-5xl relative pipi`}
+          className={`font-noirpro text-5xl relative experience`}
         >
           Experience
         </a>
@@ -25,13 +22,10 @@ const HomeCards = () => {
       >
         <a
           style={{
-            "--start-color": "#667eea",
-            "--end-color": "#764ba2",
-            "--content": "My software projects",
-            "--delay": "3s",
+            viewTransitionName: "projects-title",
           }}
           href="/projects"
-          className={`font-noirpro text-5xl relative pupu`}
+          className={`font-noirpro text-5xl relative projects`}
         >
           My software projects
         </a>

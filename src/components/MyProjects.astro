@@ -7,9 +7,10 @@ import { myProjects } from "../data";
       <a class="absolute top-0 left-2" href="/">
         <img class=" h-[55px] w-[55px]"  src="./arrow-left-outline.svg" alt="left"/>
       </a>
-      <section class="flex flex-col gap-5 pl-4 pt-[55px] pb-4 lg:grid grid-cols-3 grid-rows-2" >
+      <section class="flex flex-col gap-10 pl-4 pt-[55px] lg:grid grid-cols-3 grid-rows-2" >
         {Object.keys(myProjects).map((key, i) => (
           <ProjectCard
+            pictures={myProjects[key as keyof typeof myProjects]["image"]}
             title={myProjects[key as keyof typeof myProjects]["title"]}
             id={myProjects[key as keyof typeof myProjects]["id"]}
           />

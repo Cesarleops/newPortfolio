@@ -34,35 +34,28 @@ const { title } = Astro.props;
 	}
 	
 
+
 	
 
- ::view-transition-new(experience-anima):only-child {
-  animation: 250ms cubic-bezier(0.4, 0, 0.2, 1) both fade-in;
-}
+	::view-transition-old(experience-title) {
+		display:none
+	}
+	::view-transition-new(experience-title) {
+		animation: 300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-in;
+	}
 
- ::view-transition-old(experience-anima):only-child {
-  display:none
-}
-	
- ::view-transition-new(project-anima):only-child {
-  animation: 250ms cubic-bezier(0.4, 0, 0.2, 1) both slide-in;
-}
 
- ::view-transition-old(project-anima):only-child {
-  display: none
-} 
+	::view-transition-old(projects-title) {
+		display: none;
+	}
+	::view-transition-new(projects-title) {
+		animation: 300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-in;
+	}
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-}
 
-@keyframes fade-out {
-  to {
-    opacity: 0;
-  }
-}
+
+
+
 
 @keyframes slide-in {
   from {
@@ -75,6 +68,10 @@ const { title } = Astro.props;
     transform: translateY(-70px);
   }
 }
+
+
+
+
 	
 </style>
 

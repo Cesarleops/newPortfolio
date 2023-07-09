@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 interface Props {
     id:string
+
 }
 
 
@@ -21,7 +22,7 @@ const actualProject = Object.values(myProjects).find( p => p.id === project)
         <img class=" h-[55px] w-[55px]" src="./arrow-left-outline.svg" alt="left"/>
       </a>
         <section class="flex flex-col lg:flex-row items-center justify-center ">
-          <section class="p-5 flex flex-col pt-[50px] items-center justify-center" style=`view-transition-name:project-${actualProject?.id}`>
+          <section class="p-5 flex flex-col pt-[50px] items-center justify-center">
             <h4 class="text-3xl font-noirpro text-[#001053]">{actualProject?.title}</h4>
             <article class="max-w-sm mb-2">
               <p class="font-noirlight text-xl text-black">{actualProject?.description}</p>
@@ -44,7 +45,9 @@ const actualProject = Object.values(myProjects).find( p => p.id === project)
               </li>
             </ul>
           </section>
-          <section class="w-[400px] h-[300px] bg-blue-500 text-center">AQUI DEBE IR LA GALERIA DE IMAGENES  </section>
+          <section class="w-[400px] h-[300px]  text-center">
+        <img src={actualProject?.image[0]} class="object-cover w-full max-h-full" alt="form" style={`view-transition-name:image-${actualProject?.id}`}/>
+          </section>
         </section>
         
           
