@@ -7,8 +7,8 @@ const paragraphs = description.split("/");
 
     <section>
       <header>
-        <p class="text-[#001053] font-noirpro">{longevity}</p>
-        <h4 class="text-[#001053] font-noirpro">{job}</h4>
+        <p class="text-secondary font-noirpro">{longevity}</p>
+        <h4 class="text-secondary font-noirpro">{job}</h4>
       </header>
       <section class="flex flex-col items-center ">
         <article
@@ -17,7 +17,7 @@ const paragraphs = description.split("/");
           <h5 class="font-noirlight text-xl">{position}</h5>
           {paragraphs.map((paragraph:string) => (
             <p class="font-noirlight">
-              <small class="font-noirlight text-[#001053]  text-center text-xl">-</small>{" "}
+              <small class="font-noirlight text-secondary  text-center text-xl">-</small>{" "}
               {paragraph}
             </p>
           ))}

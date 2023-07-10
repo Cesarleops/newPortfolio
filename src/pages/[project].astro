@@ -23,13 +23,13 @@ const actualProject = Object.values(myProjects).find( p => p.id === project)
       </a>
         <section class="flex flex-col lg:flex-row items-center justify-center ">
           <section class="p-5 flex flex-col pt-[50px] items-center justify-center">
-            <h4 class="text-3xl font-noirpro text-[#001053]">{actualProject?.title}</h4>
+            <h4 class="text-3xl font-noirpro text-secondary">{actualProject?.title}</h4>
             <article class="max-w-sm mb-2">
               <p class="font-noirlight text-xl text-black">{actualProject?.description}</p>
             </article>
             <article class="flex max-w-[310px] flex-wrap gap-2 mb-10">
               {actualProject?.stack?.map((tec:string) => (
-                <p class="font-noirpro text-sm text-white bg-[#001053] p-1 rounded-lg ">{tec}</p>
+                <p class="font-noirpro text-sm text-white bg-secondary p-1 rounded-lg ">{tec}</p>
               ))}
             </article>
             <ul class="flex gap-3 text-xl ">

@@ -5,7 +5,7 @@ const {id, title, pictures} = Astro.props
 ---
 
 <section class="h-fit  relative w-[95%] rounded-md flex flex-col">
-  <img src={pictures[0]} class="object-cover w-full max-h-full" alt="project image" style=`view-transition-name:image-${id}`/>
+  <img src={pictures[0]} loading="lazy" class="object-cover w-full max-h-full" alt="project image" style=`view-transition-name:image-${id}`/>
   <aside style=`view-transition-name:text-${id}`  class="bg-gradient-to-r  from-[#00c6ff] to-[#0072ff] w-full h-10 flex justify-start items-center gap-2 absolute bottom-0 z-20 text-white">
     <h4 class="pl-4  text-white">{title}</h4>
     <a class="text-white" href={`/${id}`}>GO</a>

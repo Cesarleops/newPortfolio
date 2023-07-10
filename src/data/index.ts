@@ -12,7 +12,7 @@ interface ProjectCardProps {
 export  const myProjects: {
     AdvancedSignUp: ProjectCardProps;
     AllGames: ProjectCardProps;
-    Hbuy: ProjectCardProps;
+
     Umoob: ProjectCardProps;
     Sendy: ProjectCardProps;
   } = {
@@ -36,24 +36,6 @@ export  const myProjects: {
       image: ['./gamesOne.png','./gamesTwo.png','./gamesThree.png'],
       gitHub: "https://github.com/Cesarleops/PI-Videogames",
       demo: "https://pi-videogames-luh0u0eyu-cesarleops.vercel.app",
-    },
-    Hbuy: {
-      id: "3",
-      title: "H-BUY",
-      description:
-        "E-Commerce developed as a team, we used the MERN stack to develop an E-commerce that was functional for different industries, it has authorization, payment gateway, administrative profiles and other functionalities. ",
-      stack: [
-        "Javascript",
-        "React",
-        "Redux",
-        "Bootstrap",
-        "MongoDB",
-        "MaterialUI",
-        "Express",
-      ],
-      image: [],
-      gitHub: "https://github.com/Felipesch96/PF-H-Buy",
-      demo: "https://main.d2d0y3pf0pfssa.amplifyapp.com/",
     },
     Umoob: {
       id: "4",

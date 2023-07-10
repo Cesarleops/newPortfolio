@@ -3,12 +3,12 @@
 ---
 
     <section
-      class="bg-[#0079EB] h-screen w-screen flex flex-col items-center justify-center mb-10 gap-4 "
+      class="bg-primary h-screen w-screen flex flex-col items-center justify-center mb-10 gap-4 "
       id="about"
     >
-      <h4 class="text-3xl text-[#001053] font-noirpro">About me</h4>
+      <h4 class="text-3xl text-secondary font-noirpro">About me</h4>
       <article class="max-w-md flex flex-col items-center justify-center gap-16">
-        <p class="font-noirlight px-5 text-xl text-white">
+        <p class="font-noirlight px-5 text-xl text-terciary">
           Two years ago I was playing The witcher 3 and it came to my mind how
           you could create a world that allowed you to take so many different
           paths, so many ways to do things, that made me fell in love with the
@@ -26,14 +26,14 @@
 
 
 
-<script>
+<!-- <script>
   const card = document.getElementById('about')
   console.log(card)
   const observer = new IntersectionObserver((entries)=>{
       if (entries[0].isIntersecting) {
-        console.log('inter')
+
         card.classList.add('show');
-        observer.unobserve(card)
+     
       } else {
         card.classList.remove('show');
         
@@ -41,13 +41,13 @@
       
     }
    
-  , {threshold: 0.5})
+  , {threshold: 0})
  
   observer.observe(card)
 
-</script>
+</script> -->
 
-<style>
+<!-- <style>
   #about.show {
     opacity: 1;
     transition: opacity 1s ease-out
@@ -58,14 +58,7 @@
    
     transition: opacity 0.6s ease-out
   }
-</style>
+</style> -->
 
 
 
-<script>
-
-const arr = [7,1,5,3,6,4]
-let max = arr[0]
-
-console.log(max)
-</script>
