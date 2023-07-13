@@ -11,7 +11,6 @@ interface ProjectCardProps {
 
 export  const myProjects: {
     AdvancedSignUp: ProjectCardProps;
-    AllGames: ProjectCardProps;
     Umoob: ProjectCardProps;
     Sendy: ProjectCardProps;
   } = {
@@ -24,17 +23,6 @@ export  const myProjects: {
       image: ["./firstSign.png", "./secondSign.png", "./thirdSign.png","./fourthSign.png"],
       gitHub: "https://github.com/Cesarleops/advancedSignUp",
       demo: "https://neon-mousse-70d49d.netlify.app",
-    },
-  
-    AllGames: {
-      id: "2",
-      title: "AllGames",
-      description:
-        "A non-responsive library where you can find information about any video game such as description, release date, reviews and more. You can see the most popular games as well as use filters to simplify your search.",
-      stack: ["Javascript", "React", "Redux", "CSS", "PostgreSql", "Express"],
-      image: ['./gamesOne.png','./gamesTwo.png','./gamesThree.png'],
-      gitHub: "https://github.com/Cesarleops/PI-Videogames",
-      demo: "https://pi-videogames-luh0u0eyu-cesarleops.vercel.app",
     },
     Umoob: {
       id: "4",
