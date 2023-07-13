@@ -12,7 +12,6 @@ interface ProjectCardProps {
 export  const myProjects: {
     AdvancedSignUp: ProjectCardProps;
     AllGames: ProjectCardProps;
-
     Umoob: ProjectCardProps;
     Sendy: ProjectCardProps;
   } = {
@@ -59,8 +58,8 @@ export  const myProjects: {
         "Express",
         "Moongose",
       ],
-      image: [],
+      image: ['/chat.png'],
       gitHub: "https://github.com/Cesarleops/superChat",
-      demo: "https://www.umoob.com/",
+      demo: "https://super-chat-six.vercel.app",
     },
   };
