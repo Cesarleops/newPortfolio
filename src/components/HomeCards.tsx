@@ -26,7 +26,7 @@ const HomeCards = () => {
           }}
           href="/projects"
           className={`font-noirpro text-5xl relative projects`}
-          rel="prefetch-intent"
+          rel="prefetch"
         >
           My software projects
         </a>
