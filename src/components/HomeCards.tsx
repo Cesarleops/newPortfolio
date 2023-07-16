@@ -24,9 +24,9 @@ const HomeCards = () => {
           style={{
             viewTransitionName: "projects-title",
           }}
-          rel="prefetch"
           href="/projects"
           className={`font-noirpro text-5xl relative projects`}
+          rel="prefetch-intent"
         >
           My software projects
         </a>
