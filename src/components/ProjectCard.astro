@@ -13,8 +13,9 @@ const {id, title, pictures} = Astro.props
     <aside style=`view-transition-name:text-${id}`  class="bg-primary w-full h-10 flex 
     justify-between items-center gap-2 absolute bottom-0 z-20 text-white">
       <h4 class="pl-4 text-white text-lg">{title}</h4>
-      <a class="text-secondary text-lg text-center h-8 w-8" href={`/${id}`}>
-        <img src="/arrow-right-outline.svg" alt="right-arrow"/>
+      <a class="text-secondary text-lg text-center"  href={`/${id}`}>
+        <img src="/arrow-right-outline.svg" class="h-8 w-8" alt="right-arrow"/>
+        
       </a>
     </aside>
   </section>
