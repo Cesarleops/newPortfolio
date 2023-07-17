@@ -1,11 +1,12 @@
 ---
 import ProjectCard from "./ProjectCard.astro";
 import { myProjects } from "../data";
+import leftArrow from '../assets/arrow-left-outline.svg'
 ---
     <main
       class="w-screen h-screen relative" style="view-transition-name:project-anima"> 
-      <a class="absolute top-0 left-2" href="/">
-        <img class=" h-[55px] w-[55px]"  src="./arrow-left-outline.svg" alt="left"/>
+      <a class="absolute top-0 left-2 h-[50px] w-[50px]" href="/">
+        <img src={leftArrow.src} alt={'arrow'}/>
       </a>
       <section class="flex flex-col gap-10 pl-4 pt-[55px] lg:grid grid-cols-3 grid-rows-2" >
         {Object.keys(myProjects).map((key, i) => (

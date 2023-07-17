@@ -1,5 +1,7 @@
 ---
+import { Image } from "astro:assets";
 import { myProjects } from "../data";
+import arrowLeft from '../assets/arrow-left-outline.svg'
 import Layout from "../layouts/Layout.astro";
 
 interface Props {
@@ -11,15 +13,15 @@ interface Props {
 const {project} = Astro.params
 
 
-
 const actualProject = Object.values(myProjects).find( p => p.id === project) 
+
 
 ---
 
 <Layout title="Cesar Leyton">
     <main class="h-screen relative w-screen flex justify-center items-center ">
       <a class="absolute z-10 top-2 left-2" href="/projects">
-        <img class=" h-[55px] w-[55px]" src="./arrow-left-outline.svg" alt="left"/>
+        <img class=" h-[55px] w-[55px]" src={arrowLeft.src} alt="left"/>
       </a>
         <section class="flex flex-col lg:flex-row items-center justify-center ">
           <section class="p-5 flex flex-col pt-[50px] items-center justify-center">
@@ -49,7 +51,7 @@ const actualProject = Object.values(myProjects).find( p => p.id === project)
             </ul>
           </section>
           <section class="w-[400px] h-[300px]  text-center">
-        <img src={actualProject?.image[0]} class="object-cover w-full max-h-full" alt="form" style={`view-transition-name:image-${actualProject?.id}`}/>
+            <Image src={actualProject?.image[0]} width={200} height={200}  alt={'project image'} style={`view-transition-name:image-${actualProject?.id}`} class="object-cover w-full max-h-full"/> 
           </section>
         </section>
         
