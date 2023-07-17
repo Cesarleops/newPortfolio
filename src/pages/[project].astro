@@ -48,7 +48,7 @@ const actualProject = Object.values(myProjects).find( p => p.id === project)
             </footer>
           </section>
           <section class="w-[400px] h-[300px] text-center">
-            <Image src={actualProject?.image[0]} width={200} height={200}  alt={'project image'} style={`view-transition-name:image-${actualProject?.id}`} class="object-cover w-full max-h-full rounded-xl"/> 
+            <Image src={actualProject?.image} width={200} height={200}  alt={'project image'} style={`view-transition-name:image-${actualProject?.id}`} class="object-cover w-full max-h-full rounded-xl"/> 
           </section>
         </section>
         
