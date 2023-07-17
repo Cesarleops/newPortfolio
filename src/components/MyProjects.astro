@@ -6,11 +6,11 @@ import Layout from "../layouts/Layout.astro";
 ---
 <Layout title="Cesar Leyton">
   <main
-  class="w-screen h-screen relative" style="view-transition-name:project-anima"> 
+  class="w-screen h-screen relative bg-terciary" style="view-transition-name:project-anima"> 
   <a class="absolute top-0 left-2 h-[50px] w-[50px]" href="/">
     <img src="/arrow-left-outline.svg" alt={'arrow'}/>
   </a>
-  <section class="flex flex-col gap-10 pl-4 pt-[55px] lg:grid grid-cols-3 grid-rows-2" >
+  <section class="grid grid-cols-1 gap-10 pl-4 pt-[150px] lg:grid-cols-3 " >
     {Object.keys(myProjects).map((key, i) => (
       <ProjectCard
         pictures={myProjects[key as keyof typeof myProjects]["image"]}

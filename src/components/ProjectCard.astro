@@ -8,12 +8,14 @@ const {id, title, pictures} = Astro.props
 ---
 
 <Layout title="Cesar Leyton">
-  <section class="h-fit  relative w-[95%] rounded-md flex flex-col">
-    <Image src={pictures[0]} alt={'project image'} width={200} height={200} style=`view-transition-name:image-${id}` class="object-cover w-full max-h-full"/>
-    <aside style=`view-transition-name:text-${id}`  class="bg-gradient-to-r from-[#00c6ff] to-[#0072ff] w-full h-10 flex 
-    justify-start items-center gap-2 absolute bottom-0 z-20 text-white">
-      <h4 class="pl-4 text-secondary text-lg">{title}</h4>
-      <a class="text-secondary text-lg" href={`/${id}`}>GO</a>
+  <section class="h-fit relative w-[95%] flex flex-col">
+    <Image src={pictures[0]} alt={'project image'} width={200} height={200} style=`view-transition-name:image-${id}` class="object-cover w-full max-h-full rounded-lg"/>
+    <aside style=`view-transition-name:text-${id}`  class="bg-primary w-full h-10 flex 
+    justify-between items-center gap-2 absolute bottom-0 z-20 text-white">
+      <h4 class="pl-4 text-white text-lg">{title}</h4>
+      <a class="text-secondary text-lg text-center h-8 w-8" href={`/${id}`}>
+        <img src="/arrow-right-outline.svg" alt="right-arrow"/>
+      </a>
     </aside>
   </section>
   

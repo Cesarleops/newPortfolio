@@ -6,27 +6,28 @@ a{
 
 .experience::before {
 
-  animation: animated 8s infinite;
-  background: linear-gradient(90deg,#2980B9, #6DD5FA);
+  /* animation: animated 8s infinite; */
+  background: linear-gradient(90deg,#a8ff78, #67fa12);
   content: 'Experience'; 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   position: absolute;
   inset: 0;
-  animation-delay:  0s;
+  /* animation-delay:  0s; */
 
 }
 
 .projects::before {
-  animation: animated 8s infinite;
+  /* animation: animated 8s infinite; */
   padding-top: 2px;
-  background: linear-gradient(90deg,#8E2DE2, #4A00E0);
+  background: linear-gradient(90deg,#a8ff78, #67fa12);
   content: 'My software projects';
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
   position: absolute;
   inset: 0;
-  animation-delay: 3s;
+  /* animation-delay: 3s; */
   
   
 
