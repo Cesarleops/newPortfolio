@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import { myProjects } from "../data";
-import arrowLeft from '../assets/arrow-left-outline.svg'
+
 import Layout from "../layouts/Layout.astro";
 
 interface Props {
@@ -21,7 +21,7 @@ const actualProject = Object.values(myProjects).find( p => p.id === project)
 <Layout title="Cesar Leyton">
     <main class="h-screen relative w-screen flex justify-center items-center ">
       <a class="absolute z-10 top-2 left-2" href="/projects">
-        <img class=" h-[55px] w-[55px]" src={arrowLeft.src} alt="left"/>
+        <img class=" h-[55px] w-[55px]" src="/arrow-left-outline.svg" alt="left"/>
       </a>
         <section class="flex flex-col lg:flex-row items-center justify-center ">
           <section class="p-5 flex flex-col pt-[50px] items-center justify-center">

@@ -20,7 +20,7 @@ export  const myProjects: {
       description:
         "A funny challenge from Front-End Mentor where you have to develop a responsive form for a games suscription with a stepper.",
       stack: ["Typescript", "React", "Scss"],
-      image: ["../assets/firstSign.png", "../assets/secondSign.png", "../assets/thirdSign.png","../assets/fourthSign.png"],
+      image: ["/firstSign.png", "/secondSign.png", "/thirdSign.png","/fourthSign.png"],
       gitHub: "https://github.com/Cesarleops/advancedSignUp",
       demo: "https://neon-mousse-70d49d.netlify.app",
     },
@@ -30,7 +30,7 @@ export  const myProjects: {
       description:
         "Umoob is a business management app and a marketplace focused on the fitness industry. I've worked as a front-end developer in several development cycles ",
       stack: ["Typescript", "Python", "React", "Redux", "SASS", "Django"],
-      image: ['../assets/umoobOne.png','../assets/umoobTwo.png','../assets/umoobThree.png'],
+      image: ['/umoobOne.png','/umoobTwo.png','/umoobThree.png'],
       demo: "https://www.umoob.com/",
     },
     Sendy: {
@@ -46,7 +46,7 @@ export  const myProjects: {
         "Express",
         "Moongose",
       ],
-      image: ['../assets/chat.png'],
+      image: ['/chat.png'],
       gitHub: "https://github.com/Cesarleops/superChat",
       demo: "https://super-chat-six.vercel.app",
     },

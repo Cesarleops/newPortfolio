@@ -1,9 +1,5 @@
 ---
 import Header from '../components/Header.astro'
-import gitHub from '../assets/github-outline.svg'
-import downArrow from '../assets/arrow-downward-outline.svg'
-import email from '../assets/email-outline.svg'
-import linkedIn from '../assets/linkedin-outline.svg'
 
 
 ---
@@ -26,12 +22,12 @@ import linkedIn from '../assets/linkedin-outline.svg'
             <ul class="flex items-center justify-center gap-8 [&>ul>li]: text-terciary ">
               <li class="h-10 w-10 hover:scale-110" >
                 <a href="mailto:cesarleyton549@gmail.com" target="_blank">
-                  <img src={email.src} alt={'email'}/>
+                  <img src="/email-outline.svg" alt={'email'}/>
                 </a>
               </li>
               <li class="h-10 w-10 hover:scale-110">
                 <a href="https://github.com/Cesarleops" target="_blank">
-                <img src={gitHub.src} alt={"github icon"}/>
+                <img src="/github-outline.svg" alt={"github icon"}/>
                 </a>
               </li>
               <li class="h-10 w-10 hover:scale-110">
@@ -39,13 +35,12 @@ import linkedIn from '../assets/linkedin-outline.svg'
                   href="https://www.linkedin.com/in/cesar-leyton-a5b879238/"
                   target="_blank"
                 >
-                <img src={linkedIn.src} alt={"Linkedin icon"}/>
+                <img src="/linkedin-outline.svg" alt={"Linkedin icon"}/>
                 </a>
               </li>
             </ul>
-            <figure class="figure animate-bounce">
-            
-              <img src={downArrow.src} alt={'down arrow'}/>
+            <figure class="figure animate-bounce h-10 w-10">
+              <img src="/arrow-downward-outline.svg" alt={'down arrow'}/>
             </figure>
             
           </nav>

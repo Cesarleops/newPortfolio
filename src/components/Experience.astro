@@ -9,7 +9,7 @@ interface ExperienceProps {
 
 
 import ExperienceCard from './ExperienceCard.astro';
-import arrowLeft from '../assets/arrow-left-outline.svg'
+
 const myExperience: {
   Umoob: ExperienceProps;
   Nacional: ExperienceProps;
@@ -46,7 +46,7 @@ const myExperience: {
       style="view-transition-name:experience-anima"
     >
     <a class="absolute top-2 left-2" href="/">
-      <img class=" h-[55px] w-[55px]"  src={arrowLeft.src} alt="left"/>
+      <img class=" h-[55px] w-[55px]"  src="/arrow-left-outline.svg" alt="left"/>
     </a>
       <section class="pt-20 gap-20 flex flex-col items-center lg:flex-row lg:items-start lg:justify-center ">
         {Object.keys(myExperience).map((key, i) => (
