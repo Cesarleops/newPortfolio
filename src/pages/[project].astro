@@ -37,12 +37,12 @@ const actualProject = Object.values(myProjects).find( p => p.id === project)
             <footer class="flex gap-3 text-xl ">
               <article class=" p-1 text-secondary font-noirlight rounded-lg hover:scale-105">
               {actualProject?.gitHub ?  <a  href={actualProject.gitHub}>
-                  View site
+                  View demo
                </a> : ''}
               </article>
               <article class=" p-1 rounded-lg hover:scale-105">
                 <a class="" href={actualProject?.demo}>
-                  <p class="text-secondary font-noirlight">View demo</p>
+                  <p class="text-secondary font-noirlight">View site</p>
                 </a>
               </article>
             </footer>
