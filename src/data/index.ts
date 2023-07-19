@@ -12,7 +12,7 @@ interface ProjectCardProps {
 export  const myProjects: {
     AdvancedSignUp: ProjectCardProps;
     Umoob: ProjectCardProps;
-    Sendy: ProjectCardProps;
+    // Sendy: ProjectCardProps;
   } = {
     AdvancedSignUp: {
       id: "1",
@@ -33,21 +33,21 @@ export  const myProjects: {
       image: '/umoobOne.png',
       demo: "https://www.umoob.com/",
     },
-    Sendy: {
-      id: "5",
-      title: "Sendy",
-      description:
-        "Sendy is a messaging app when you can add friends and talk with them anytime",
-      stack: [
-        "Typescript",
-        "Next JS",
-        "Tailwind CSS",
-        "Mongo DB",
-        "Express",
-        "Moongose",
-      ],
-      image: '/chat.png',
-      gitHub: "https://github.com/Cesarleops/superChat",
-      demo: "https://super-chat-six.vercel.app",
-    },
+    // Sendy: {
+    //   id: "5",
+    //   title: "Sendy",
+    //   description:
+    //     "Sendy is a messaging app when you can add friends and talk with them anytime",
+    //   stack: [
+    //     "Typescript",
+    //     "Next JS",
+    //     "Tailwind CSS",
+    //     "Mongo DB",
+    //     "Express",
+    //     "Moongose",
+    //   ],
+    //   image: '/chat.png',
+    //   gitHub: "https://github.com/Cesarleops/superChat",
+    //   demo: "https://super-chat-six.vercel.app",
+    // },
   };
