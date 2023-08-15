@@ -1,68 +1,16 @@
----
-interface ExperienceProps {
-  longevity: string;
-  job: string;
-  position: string;
-  description: string;
-  technologies?: string[];
-}
 
 
-import ExperienceCard from './ExperienceCard.astro';
 
-const myExperience: {
-  Umoob: ExperienceProps;
-  Nacional: ExperienceProps;
-} = {
-  Umoob: {
-    longevity: "2022-PRESENT",
-    job: "Umoob",
-    position: "Fullstack Developer",
-    technologies: [
-      "Typescript",
-      "React",
-      "SASS",
-      "Python",
-      "Django",
-      "Storybook",
-    ],
-    description:
-      "Developing responsive and reusable components with React+Typescript based on Figma designs / Maintenance and improvement of the code. / Contribute ideas that improve user experience, development and teamwork. / Collaborate with senior engineers following a complete software development cycle including development paradigms,methodologies such as Atomic design and BEM, taking participation in code reviews",
-  },
-  Nacional: {
-    longevity: "2021-PRESENT",
-    job: "Universidad Nacional de Colombia",
-    position: "Student",
-    description:
-      "Collaborated with other students in the research groups of computational science and data analysis that belong to the university, where I have been able to develop my problem solving and communication skills  ",
-  },
-};
----
-
-
-    <main
-      class="h-screen w-screen bg-white relative"
-      id="experience"
-      style="view-transition-name:experience-anima"
-    >
-    <a class="absolute top-2 left-2" href="/">
-      <img class=" h-[55px] w-[55px]"  src="/arrow-left-outline.svg" alt="left"/>
-    </a>
-      <section class="pt-20 gap-20 flex flex-col items-center lg:flex-row lg:items-start lg:justify-center ">
-        {Object.keys(myExperience).map((key, i) => (
-          <ExperienceCard
-            longevity={
-              myExperience[key as keyof typeof myExperience]["longevity"]
-            }
-            job={myExperience[key as keyof typeof myExperience]["job"]}
-            description={
-              myExperience[key as keyof typeof myExperience]["description"]
-            }
-            position={
-              myExperience[key as keyof typeof myExperience]["position"]
-            }
-            key={i}
-          />
-        ))}
-      </section>
-    </main>
+<section>
+  <hgroup class="text-primary dark:text-white">
+    <h4 >Umoob</h4>
+    <h5>2022 - Present</h5>
+    <h6 class="text-emerald-700  rounded-full">Front End developer</h6>
+  </hgroup>
+  <article class="flex flex-col gap-3 max-w-[400px] text-justify text-sm font-normal mt-3 text-primary dark:text-terciary">
+    <p>-Developing responsive and reusable components with React+Typescript based on Figma designs </p>
+    <p>-Collaborate with senior engineers following a complete software development cycle including development paradigms,methodologies such as Atomic design and BEM, taking participation in code reviews</p>
+    <p>-Maintenance and improvement of the code.</p>
+    <p>-Contribute ideas that improve user experience, development and teamwork. </p>
+  </article>
+</section>

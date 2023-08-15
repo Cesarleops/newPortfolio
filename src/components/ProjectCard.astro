@@ -1,24 +1,36 @@
 ---
 import { Image } from "astro:assets";
-import Layout from "../layouts/Layout.astro";
-
-const {id, title, pictures} = Astro.props
-
-
+const {title, description, stack, gitHub, image, demo} = Astro.props
 ---
-
-<Layout title="Cesar Leyton">
-  <section class="h-fit relative w-[95%] flex flex-col">
-    <Image src={pictures} alt={'project image'} width={200} height={200} style=`view-transition-name:image-${id}` class="object-cover w-full max-h-full rounded-lg"/>
-    <aside style=`view-transition-name:text-${id}`  class="bg-primary w-full h-10 flex 
-    justify-between items-center gap-2 absolute bottom-0 z-20 text-white">
-      <h4 class="pl-4 text-white text-lg">{title}</h4>
-      <a class="text-secondary text-lg text-center"  href={`/${id}`}>
-        <img src="/arrow-right-outline.svg" class="h-8 w-8" alt="right-arrow"/>
-      </a>
-    </aside>
-  </section>
-  
-</Layout>
+<main class="project p-4 rounded-xl relative flex justify-center items-center shadow-md">
+      <section class="flex flex-col lg:flex-row items-center justify-center ">
+        <section class="p-5 flex flex-col pt-[50px] gap-4 items-center justify-center">
+          <h4 class="text-3xl text-blue-700 font-bold">{title}</h4>
+          <article class="max-w-sm mb-2">
+            <p class="text-md  text-primary dark:text-terciary">{description}</p>
+          </article>
+          <article class="flex max-w-[310px] flex-wrap gap-2 mb-10">
+            {stack?.map((tec:string) => (
+              <p class="text-sm text-violet-700 bg-violet-100  p-1 rounded-lg ">{tec}</p>
+            ))}
+          </article>
+          <footer class="flex gap-4 text-xl ">
+            <article class=" hover:scale-105">
+            {gitHub ?  <a class="text-white bg-primary dark:bg-white dark:text-primary rounded-full p-2 text-semibold" href={gitHub} target="_blank">
+                View code
+             </a> : ''}
+            </article>
+            <article class="hover:scale-105">
+              <a class="text-white text-semibold bg-primary dark:bg-white dark:text-primary rounded-full p-2 " href={demo} target="_blank">
+                View site
+              </a>
+            </article>
+          </footer>
+        </section>
+        <section class="w-[400px] h-[300px] text-center">
+          <Image src={image} width={200} height={200}  alt={'project image'}  class="object-cover w-full max-h-full rounded-xl"/> 
+        </section>
+      </section>  
+  </main>
 
 

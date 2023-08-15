@@ -1,17 +1,106 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import MyCard from '../components/MyCard.astro'
-import HomeCards from '../components/HomeCards';
-import About from '../components/About.astro';
+import Layout from "../layouts/Layout.astro";
+import Toggle from "../components/Toggle.astro";
+import Experience from "../components/Experience.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { myProjects } from "../data";
 ---
 
-
 <Layout title="Cesar Leyton">
-	<main class="bg-primary scroll-smooth">
-		<MyCard/>
-		<About/>
-		<HomeCards/>
-	</main>	
+  <main class="scroll-smooth w-screen flex flex-col">
+    <header class="flex items-center justify-between px-4 pt-3">
+      <hgroup>
+      <h4 class="font-bold text-xl text-primary dark:text-white">Cesar Leyton</h4>
+      <h6 class="text-primary dark:text-terciary">Software Developer</h6>
+      </hgroup>
+      <nav>
+        <ul class="flex gap-4 text-lg text-primary dark:text-white">
+          <li class="hover:scale-105">
+            <a href="#experience" class="hover:scale-105">Experience</a>
+          </li>
+          <li class="hover:scale-105">
+            <a href="#projects" >Projects</a></li>
+          <li><Toggle/></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="flex flex-col justify-center items-center pt-40 text-3xl font-extrabold px-14">
+      <article class="flex flex-col gap-8 items-center ">
+        <h1 class="text-black text-3xl dark:text-white">
+          I build cool things in my <span class="title">computer</span>
+        </h1>
+        <article class="flex flex-col justify-center gap-5 text-sm text-justify font-normal text-black dark:text-[#969698]">
+          <p class="max-w-[400px]"> A few years ago I never thought that my favorite activity in the whole world would be watching my code fail and 
+              then realize that I misspelled a word.</p>
+
+          <p class="max-w-[400px]"> Now I'm in my third year of my software engineering career, I completed a year as a front end developer at Umoob, 
+              a startup that seeks to boost gyms in Mexico, and I'm very interested in full stack development.</p>
+          <p class="max-w-[400px]">I enjoy creating solutions, accessible and innovative software, and learning constantly.</p>
+        </article>
+
+      </article>
+      <footer class="foot flex justify-center items-center gap-4 pt-6">
+        <a class="p-2 border-[1px] bg-red-100  text-red-700  text-xs font-semibold rounded-full hover:bg-white hover:border-[1px] hover:border-red-700 transition-colors ease-in" href="mailto:cesarleyton549@gmail.com" target="_blank">Email</a>
+        <a class="p-2 border-[1px] bg-indigo-100 text-indigo-700  text-xs font-semibold rounded-full hover:bg-white hover:border-[1px] hover:border-indigo-700 transition-colors ease-in" href="https://github.com/Cesarleops" target="_blank">Github </a>
+        <a class="p-2 border-[1px] bg-cyan-100 text-cyan-600 text-xs font-semibold  rounded-full hover:bg-white hover:border-[1px] hover:border-cyan-700 transition-colors ease-in "  href="https://www.linkedin.com/in/cesar-leyton-a5b879238/" target="_blank">Linkedin</a>
+      </footer>
+    </section>
+    <section class="flex flex-col items-center gap-10 pt-56 pb-10 px-14">
+      <h3 class="text-2xl font-bold text-emerald-700" id="experience">Experience</h3>
+      <article>
+        <Experience/>
+      </article>
+    </section >
+    <section class="flex flex-col items-center gap-10 pt-20 pb-10 px-14">
+      <h3 class="text-2xl font-bold text-blue-700" id="projects">Projects</h3>
+      <section class="flex flex-col gap-8">
+        {Object.keys(myProjects).map((key, i) => (
+          <ProjectCard
+            image={myProjects[key as keyof typeof myProjects]["image"]}
+            title={myProjects[key as keyof typeof myProjects]["title"]}
+            id={myProjects[key as keyof typeof myProjects]["id"]}
+            description={myProjects[key as keyof typeof myProjects]["description"]}
+            gitHub={myProjects[key as keyof typeof myProjects]["gitHub"]}
+            stack={myProjects[key as keyof typeof myProjects]["stack"]}
+            demo={myProjects[key as keyof typeof myProjects]["demo"]}
+
+          />
+        ))}
+      </section>
+    </section>
+  </main>
 </Layout>
 
+<style>
 
+  .title{
+     transition: color;
+     background: linear-gradient(90deg,#ED213A, #93291E);
+     background-clip: text;
+     inset: 0;
+     color: transparent;
+
+   
+  }
+
+    
+  
+  @keyframes animated {
+  0% {
+       background: linear-gradient(90deg,#ED213A, #93291E);
+       background-clip: text;
+
+  }
+
+  50% {
+    background: linear-gradient(90deg, #f12711, #f5af19);
+    background-clip: text;
+
+  }
+
+  100% {
+    background: linear-gradient(90deg,#f953c6, #b91d73);
+    background-clip: text;
+  }
+}
+</style>

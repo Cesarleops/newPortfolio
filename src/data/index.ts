@@ -19,8 +19,8 @@ export  const myProjects: {
       title: "Sign Up form",
       description:
         "A funny challenge from Front-End Mentor where you have to develop a responsive form for a games suscription with a stepper.",
-      stack: ["Typescript", "React", "Scss"],
-      image: "/firstSign.png",
+      stack: ["Typescript", "React", "Sass"],
+      image: "/improvedForm.png",
       gitHub: "https://github.com/Cesarleops/advancedSignUp",
       demo: "https://neon-mousse-70d49d.netlify.app",
     },
@@ -29,7 +29,7 @@ export  const myProjects: {
       title: "Umoob",
       description:
         "Umoob is a business management app and a marketplace focused on the fitness industry. I've worked as a front-end developer in several development cycles ",
-      stack: ["Typescript", "Python", "React", "Redux", "SASS", "Django"],
+      stack: ["Typescript", "Python", "React", "Redux", "Sass", "Django"],
       image: '/umoobOne.png',
       demo: "https://www.umoob.com/",
     },
